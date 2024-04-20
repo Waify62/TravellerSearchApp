@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book"
+        android:icon="@drawable/menu_icon"
+        android:title="Список" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workbook"
+        android:icon="@drawable/plus_icon"
+        android:title="Добавить" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dictionary"
+        android:icon="@drawable/profile_icon"
+        android:title="Профиль" />
+</menu>
