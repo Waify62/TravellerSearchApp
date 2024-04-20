@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginTop="15dp"
             android:text="Новое путешествие"
             android:textColor="@color/white"
             android:textSize="34sp" />
@@ -25,24 +26,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="627dp"
+        android:layout_height="727dp"
         android:layout_gravity="bottom"
         android:orientation="vertical">
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="250dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:backgroundTint="#FFFFFF"
-            android:src="@drawable/_15759_camera_icon" />
 
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="имя"
             android:inputType="text"
@@ -50,9 +44,10 @@
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="telegram"
             android:inputType="text"
@@ -60,19 +55,21 @@
 
         <EditText
             android:id="@+id/editTextText3"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="даты"
+            android:hint="дата"
             android:inputType="text"
             android:textSize="24sp" />
 
         <EditText
             android:id="@+id/editTextText4"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:ems="10"
             android:hint="адрес"
             android:inputType="text"
@@ -82,9 +79,11 @@
             android:id="@+id/button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="Войти"
+            android:layout_marginTop="20dp"
+            android:text="Добавить"
+            android:textColor="@color/white"
+            android:background="@drawable/my_button"
             android:textSize="24sp" />
     </LinearLayout>
 
