@@ -1,15 +1,15 @@
 plugins {
-    alias(libs.plugins.androidApplication)
     id("com.google.gms.google-services")
+    id("com.android.application")
 }
 
 android {
-    namespace = "ru.samsung.userlistapp"
+    namespace = "com.cyberhuskies.travellersearchapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ru.samsung.userlistapp"
-        minSdk = 24
+        applicationId = "com.cyberhuskies.travellersearchapp"
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -36,31 +36,26 @@ android {
 }
 
 dependencies {
-
-
-
-
-
-    annotationProcessor(libs.compiler)
-    //noinspection UseTomlInstead
-    implementation("com.google.firebase:firebase-analytics")
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.ui.storage)
-    implementation(libs.play.services.maps)
-    implementation(libs.picasso)
-    implementation(libs.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
+//    annotationProcessor(libs.compiler)
+    implementation("androidx.core:core-ktx:1.13.0")
+    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    implementation(libs.appcompat)
-    implementation(libs.retrofit.core)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("com.squareup.okhttp3:okhttp:3.6.0")
+
     implementation(libs.androidx.legacy.support.v4)
-    implementation(libs.retrofit)
-    implementation (libs.retrofit.v290)
-    implementation (libs.converter.gson.v290)
-    //    implementation(libs.retrofit.gson)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
-
+    implementation(libs.picasso)
+    implementation(libs.play.services.maps)
+    implementation(libs.androidx.monitor)
+    implementation(libs.androidx.junit)
+    androidTestImplementation("junit:junit:4.12")
+    androidTestImplementation("junit:junit:4.12")
+    androidTestImplementation("junit:junit:4.12")
 
 }

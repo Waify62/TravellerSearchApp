@@ -1,7 +1,7 @@
 package com.cyberhuskies.travellersearchapp.domain;
 
 import com.google.android.gms.maps.model.LatLng;
-
+@Deprecated
 public class Place {
 
 

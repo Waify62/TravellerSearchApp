@@ -10,8 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TravellerSearchApp"
+        android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,6 +27,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDQ3_aAuspimak4b6VPrqxFEDRLnAnQSKI"/>
     </application>
+
     <uses-permission android:name="android.permission.INTERNET" />
 
 
